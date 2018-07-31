@@ -1,0 +1,196 @@
+body, html {
+    font-family: helvetica, sans-serif;
+    height: 100%;
+    margin: 0;
+}
+
+nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1.5em;
+}
+
+.links {
+    text-decoration: none;
+    padding-left: .75em;
+    padding-right: .75em;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+a:link {
+    color: #494949;
+}
+
+a:visited {
+    color: #494949;
+}
+
+a:hover {
+    color: #23B5D3;
+}
+
+a:active {
+    color: #23B5D3;
+}
+
+.bg {
+    background-image: url(rawpixel-unsplash.jpg);
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.front-page {
+    position: absolute;
+    top: 12em;
+    margin-left: 8em;
+}
+
+.bodytext {
+    padding-left: 4em;
+    padding-top: 5em;
+    padding-bottom: 2em;
+}
+
+.sectionheader {
+    font-size: 1.25em;
+    padding-bottom: .5em;
+}
+
+
+h1 {
+    font-size: 3.25em;
+    margin: 0;
+    color: #23B5D3;
+    transition: 0.2s;
+}
+
+h2 {
+    font-size: 1.75em;
+    margin-bottom: .5em;
+    color:#4F6D7A;
+    line-height: 1em;
+}
+
+h3 {
+    color: #4F6D7A;
+    font-size: 1.25em;
+}
+
+h4 {
+    position:absolute;
+    bottom:0;
+    right:0;
+    padding-right: 1em;
+    font-size: .75em;
+    font-weight: 400;
+    color: #494949;
+}
+
+p{
+    padding-bottom: .25em;
+    padding-right: 15em;
+    padding-top: .25em;
+    line-height: 1.1em;
+    color: #494949;
+}
+
+ul {
+    padding-right: 2em;
+    line-height: 1.5em;
+    color: #494949;
+    list-style-image: url(bulletpoint.png);
+}
+
+
+.column {
+    float: left;
+    width: 30%;
+}
+
+.dot {
+    height: 1.1em;
+    width: 1.1em;
+    margin-right: .5em;
+    margin-bottom: .5em;
+    border-radius: 50%;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+#dot1 {
+    background-color: #DD1C2C;
+}
+
+#dot1:hover {
+    transform: scale(1.3);
+}
+
+#dot1:active ~ h1 {
+    color: #DD1C2C;
+}
+
+#dot2 {
+    background-color: #2274A5;
+}
+
+#dot2:hover {
+    transform: scale(1.3);
+}
+
+#dot2:active ~ h1 {
+    color: #2274A5;
+}
+
+#dot3 {
+    background-color: #F75C03;
+}
+
+#dot3:hover {
+    transform: scale(1.3);
+}
+
+#dot3:active ~ h1 {
+    color: #F75C03;
+}
+
+#dot4 {
+    background-color: #F1C40F;
+}
+
+#dot4:hover {
+    transform: scale(1.3);
+}
+
+#dot4:active ~ h1 {
+    color: #F1C40F;
+}
+
+@media screen and (max-width:600px) {
+    .column {
+        width: 100%;
+    }
+    
+    p {
+        padding-right: 2em;
+        line-height: 1.1em;
+    }
+    
+    .bodytext {
+        padding-left: 1em;
+    }
+    
+    .front-page {
+        position: absolute;
+        top: 9em;
+        margin-left: 2em;
+    }
+    
+    h4 {
+        padding-left: 1em;
+    }
+
+}
